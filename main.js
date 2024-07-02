@@ -1,5 +1,7 @@
 import { calculateInterest } from 'interestRate.js';
 import { calculateLoanPayment } from 'loanPayment.js';
+import { calculateInvestmentReturn } from 'investmentReturn.js';
+import { validateInputs } from 'validate.js';
 
 document.getElementById('calculate-interest').addEventListener('click', () => {
     const principal = parseFloat(document.getElementById('interest-principal').value);
