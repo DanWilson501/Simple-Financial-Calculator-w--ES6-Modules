@@ -18,3 +18,12 @@ document.getElementById('calculate-loan').addEventListener('click', () => {
 
     console.log('Loan Payment Calculation Inputs:', { principal, rate, time });
 });
+
+document.getElementById('calculate-investment').addEventListener('click', () => {
+    const principal = parseFloat(document.getElementById('investment-principal').value);
+    const rate = parseFloat(document.getElementById('investment-rate').value) / 100;
+    const time = parseFloat(document.getElementById('investment-time').value);
+    const result = calculateInvestmentReturn(principal, rate, time);
+
+    console.log('Investment Return Calculation Inputs:', { principal, rate, time });
+});
